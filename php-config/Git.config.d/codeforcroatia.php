@@ -8,7 +8,7 @@ Git::$repositories['codeforcroatia'] = [
         'data-exporters',
         'event-handlers',
         'html-templates',
-        'newsletters',
+        'locales',
         'php-classes',
         'php-config/Git.config.d',
         'php-config/Laddr.config.d',
