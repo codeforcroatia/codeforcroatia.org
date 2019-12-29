@@ -1,0 +1,1 @@
+{template personName Person}{escape(tif($.User->hasAccountLevel('Staff') ? $Person->FullName : $Person->FirstName))}{/template}
