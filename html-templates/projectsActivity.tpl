@@ -23,7 +23,7 @@
                 <td>{contextLink $project.Project}</td>
                 <td>
                     {if $project.Project->ChatChannel}
-                        <a href="/chat?channel={$project.Project->ChatChannel|escape:url}" target="_blank">#{$project.Project->ChatChannel|escape}</a>
+                        <a href="https://codeforcroatia.slack.com/messages/={$project.Project->ChatChannel|escape:url}" target="_blank">#{$project.Project->ChatChannel|escape}</a>
                     {else}
                         &mdash;
                     {/if}

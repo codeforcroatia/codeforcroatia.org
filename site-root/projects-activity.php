@@ -26,7 +26,7 @@ if (!($responseData = Cache::fetch($cacheKey)) || !empty($_GET['refresh'])) {
             $gitHubCommitsResponse = Emergence\GitHub\API::request("/repos/$projectActivity[gitHubOwner]/$projectActivity[gitHubRepo]/commits?since=".date('c', $oneMonthAgo));
 
             if (!empty($gitHubCommitsResponse['message'])) {
-                $projectActivity['errors'][] = 'GitHub repo commits unavailable: '.$gitHubCommitsResponse['message'];
+                $projectActivity['errors'][] = 'GitHub: '.$gitHubCommitsResponse['message'];
             } elseif (is_array($gitHubCommitsResponse)) {
                 $projectActivity['commitsCount'] = count($gitHubCommitsResponse);
     #            $projectActivity['commits'] = $gitHubCommitsResponse;
@@ -38,17 +38,18 @@ if (!($responseData = Cache::fetch($cacheKey)) || !empty($_GET['refresh'])) {
         }
 
         if ($Project->ChatChannel) {
-            if ($projectActivity['slackChannelId'] = Emergence\Slack\API::getChannelId($Project->ChatChannel)) {
-                $channelHistoryResponse = Emergence\Slack\API::request('channels.history', [
-                    'get' => [
-                        'channel' => $projectActivity['slackChannelId'],
-                        'oldest' => $oneMonthAgo
-                    ]
-                ]);
-                $projectActivity['messagesCount'] = count($channelHistoryResponse['messages']);
-            } else {
-                $projectActivity['errors'][] = "Slack channel $Project->ChatChannel does not exist";
-            }
+            //if ($projectActivity['slackChannelId']) {
+            //if ($projectActivity['slackChannelId'] = Emergence\Slack\API::getChannelId($Project->ChatChannel)) {
+                //$channelHistoryResponse = Emergence\Slack\API::request('channels.history', [
+                //    'get' => [
+                //        'channel' => $projectActivity['slackChannelId'],
+                //        'oldest' => $oneMonthAgo
+                 //   ]
+                //]);
+                //$projectActivity['messagesCount'] = count($channelHistoryResponse['messages']);
+            //} else {
+            //    $projectActivity['errors'][] = "Slack channel $Project->ChatChannel does not exist";
+            //}
         }
 
         $projectsActivity[] = $projectActivity;
