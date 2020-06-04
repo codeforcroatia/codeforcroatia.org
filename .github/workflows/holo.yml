@@ -1,0 +1,52 @@
+name: Projections
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  holobranch-projections:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Initialize Chef Habitat artifacts cache directory
+      run: |
+        sudo mkdir -p /hab/cache/artifacts
+        sudo chown runner:docker -R /hab
+    - name: Cache Chef Habitat artifacts
+      uses: actions/cache@v1
+      with:
+        path: /hab/cache/artifacts
+        key: hab-cache-artifacts
+    - name: 'Update holobranch: emergence/vfs-site/master'
+      uses: JarvusInnovations/hologit@actions/projector/v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        HAB_LICENSE: accept
+      with:
+        ref: master
+        holobranch: emergence-vfs-site
+        commit-to: emergence/vfs-site/master
+    - name: 'Update http://skeleton.sla.slatepowered.net/'
+      env:
+        VFS_DEV_TOKEN: ${{ secrets.VFS_DEV_TOKEN }}
+      run: |
+        # pull latest commit
+        curl -X POST \
+          --silent \
+          --fail \
+          --show-error \
+          -H "Authorization: Token ${VFS_DEV_TOKEN}" \
+          -H "Accept: application/json" \
+          "http://skeleton.sla.slatepowered.net/site-admin/sources/scienceleadership-skeleton/pull?fetch=true" \
+          | jq '.'
+
+        # sync VFS to git
+        curl -X POST \
+          --silent \
+          --fail \
+          --show-error \
+          -H "Authorization: Token ${VFS_DEV_TOKEN}" \
+          -H "Accept: application/json" \
+          "http://skeleton.sla.slatepowered.net/site-admin/sources/scienceleadership-skeleton/sync-to-vfs" \
+          | jq '.'
