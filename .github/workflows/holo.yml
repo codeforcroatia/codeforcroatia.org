@@ -18,15 +18,6 @@ jobs:
       with:
         path: /hab/cache/artifacts
         key: hab-cache-artifacts
-    - name: 'Update holobranch: emergence/vfs-site/master'
-      uses: JarvusInnovations/hologit@actions/projector/v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        HAB_LICENSE: accept
-      with:
-        ref: master
-        holobranch: emergence-vfs-site
-        commit-to: emergence/vfs-site/master
     - name: 'Update: cfc-staging-v3.poplar.phl.io'
       env:
         VFS_DEV_TOKEN: ${{ secrets.VFS_DEV_TOKEN }}
