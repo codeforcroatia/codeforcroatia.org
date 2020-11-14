@@ -8,7 +8,7 @@ use Emergence_FS;
 
 class Locale
 {
-    public static $default = Laddr::$chatLinker;
+    public static $default = 'en_US.utf8';
     protected static $_requestedLocale;
 
     /**
