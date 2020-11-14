@@ -1,4 +1,4 @@
-name: Projections
+name: Build to staging
 
 on:
   push:
@@ -6,9 +6,11 @@ on:
       - master
 
 jobs:
-  holobranch-projections:
+  build-staging:
     runs-on: ubuntu-latest
     steps:
+
+    # cache hab artifacts between runs
     - name: Initialize Chef Habitat artifacts cache directory
       run: |
         sudo mkdir -p /hab/cache/artifacts
@@ -18,6 +20,18 @@ jobs:
       with:
         path: /hab/cache/artifacts
         key: hab-cache-artifacts
+
+    # build holobranch projection and commit result to a hosted branch
+    - name: 'Update holobranch: emergence/vfs-site/master'
+      uses: JarvusInnovations/hologit@actions/projector/v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        HAB_LICENSE: accept
+      with:
+        holobranch: emergence-vfs-site
+        commit-to: emergence/vfs-site/master
+
+    # sync result to online VFS
     - name: 'Update: cfc-staging-v3.poplar.phl.io'
       env:
         VFS_DEV_TOKEN: ${{ secrets.VFS_DEV_TOKEN }}
@@ -41,3 +55,9 @@ jobs:
           -H "Accept: application/json" \
           "http://cfc-staging-v3.poplar.phl.io/site-admin/sources/codeforcroatia/sync-to-vfs" \
           | jq '.'
+
+
+    # # debug workflow if needed
+    # - uses: mxschmitt/action-tmate@v3
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
