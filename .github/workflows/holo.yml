@@ -27,7 +27,7 @@ jobs:
         ref: master
         holobranch: emergence-vfs-site
         commit-to: emergence/vfs-site/master
-    - name: 'Update http://cfc-staging-v3.poplar.phl.io/'
+    - name: 'Update: cfc-staging-v3.poplar.phl.io'
       env:
         VFS_DEV_TOKEN: ${{ secrets.VFS_DEV_TOKEN }}
       run: |
@@ -38,7 +38,7 @@ jobs:
           --show-error \
           -H "Authorization: Token ${VFS_DEV_TOKEN}" \
           -H "Accept: application/json" \
-          "http://skeleton.sla.slatepowered.net/site-admin/sources/scienceleadership-skeleton/pull?fetch=true" \
+          "http://cfc-staging-v3.poplar.phl.io/site-admin/sources/codeforcroatia/pull?fetch=true" \
           | jq '.'
 
         # sync VFS to git
@@ -48,5 +48,5 @@ jobs:
           --show-error \
           -H "Authorization: Token ${VFS_DEV_TOKEN}" \
           -H "Accept: application/json" \
-          "http://skeleton.sla.slatepowered.net/site-admin/sources/scienceleadership-skeleton/sync-to-vfs" \
+          "http://cfc-staging-v3.poplar.phl.io/site-admin/sources/codeforcroatia/sync-to-vfs" \
           | jq '.'
