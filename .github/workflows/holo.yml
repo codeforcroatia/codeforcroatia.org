@@ -27,7 +27,7 @@ jobs:
         ref: master
         holobranch: emergence-vfs-site
         commit-to: emergence/vfs-site/master
-    - name: 'Update http://skeleton.sla.slatepowered.net/'
+    - name: 'Update http://cfc-staging-v3.poplar.phl.io/'
       env:
         VFS_DEV_TOKEN: ${{ secrets.VFS_DEV_TOKEN }}
       run: |
