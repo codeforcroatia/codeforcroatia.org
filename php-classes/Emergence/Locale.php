@@ -8,7 +8,7 @@ use Emergence_FS;
 
 class Locale
 {
-    public static $default = 'hr_HR.utf8';
+    public static $default = 'en_US.utf8';
     protected static $_requestedLocale;
 
     /**
