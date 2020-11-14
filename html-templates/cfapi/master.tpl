@@ -178,7 +178,7 @@
                                     <textarea name="form-about-yourself" placeholder="About yourself..." 
                                                 class="form-about-yourself form-control" id="form-about-yourself"></textarea>
                                 </div> -->
-                                <center><button type="submit" class="btn">Check me in!</button></center>
+                                <center><button type="submit" class="btn">Not working anymore: Check me in!</button></center>
                             </form>
                         </div>
                     </div>
