@@ -78,7 +78,7 @@
     <p>However, we like to think of the term in a much more positive context—a civic hacker is someone who uses a minimum of resources and a maximum of brainpower and ingenuity to build, repair, or enhance something in their community. The civic hackers that participate in their respecive local Brigade groups are technologists, civil servants, designers, entrepreneurs, engineers—anybody who is willing to collaborate with others as they address challenges relevant to our neighborhoods, our cities, our states, and our country.</p>
 
     <h3>{_ "What next"}</h3>
-    <p><a href="/projects/create">{_ "Create a project"}</a> {_ "or"} <a href="/projects">{_ "find an existing"}</a> {_ "one to get involved with in our projects directory."}</p>
+    <p><a href="/projects/create">{_ "Create new project"}</a> {_ "or"} <a href="/projects">{_ "find an existing"}</a> {_ "one to get involved with in our projects directory."}</p>
     <br> 
 
     {/if}
