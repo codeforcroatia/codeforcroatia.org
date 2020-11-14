@@ -18,5 +18,9 @@ class Laddr
         if (empty(static::$siteAbbr)) {
             static::$siteAbbr = preg_replace('/[^A-Z]/', '', static::$siteName);
         }
+        
+        if (empty(static::$deafultLocale)) {
+            static::$deafultLocale = 'en_US.utf8';
+        }
     }
 }
