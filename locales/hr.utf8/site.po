@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Last-Translator: Miroslav Schlossberg CfC, 2020\n"
 "Language-Team: Croatian (Croatia) (https://www.transifex.com/code-for-croatia/teams/52766/hr_HR/)\n"
-"Language: hr_HR\n"
+"Language: hr\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #: html-templates/bigscreen.tpl:61
