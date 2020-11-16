@@ -12,7 +12,7 @@
     <li class="dropdown">
         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{_ "Community"}</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="/how-to-help">{_ "How to Join"}</a></li>
+          <a class="dropdown-item" href="/how-to-help">{_ "How to Join"}</a>
           <a class="dropdown-item" href="/pages/local_groups">{_ "Start a Group in Your Town"}</a>
           <a class="dropdown-item" href="/chat" target="_blank">{_ "Chat"} <small>(Slack)</small></a>
           <a class="dropdown-item" href="/slackin">{_ "Get Invite"} <small>(Slack)</small></a>
