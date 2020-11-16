@@ -1,17 +1,25 @@
 <?php
 
 Git::$repositories['codeforcroatia'] = [
-    'remote' => 'git@github.com:CodeForCroatia/codeforcroatia.org.git',
-    'originBranch' => 'master',
-    'workingBranch' => 'master',
+    'remote' => 'https://github.com/codeforcroatia/codeforcroatia.org.git',
+    'originBranch' => 'emergence/vfs-site/master',
+    'workingBranch' => 'emergence/vfs-site/master',
     'trees' => [
+        'api-docs',
+        'console-commands',
+        'cypress',
         'data-exporters',
+        'dwoo-plugins',
         'event-handlers',
         'html-templates',
-        'locales',
         'php-classes',
-        'php-config/Git.config.d',
-        'php-config/Laddr.config.d',
-        'site-root'
+        'php-config',
+        'php-migrations',
+        'phpunit-tests',
+        // 'sencha-workspace',
+        'site-root',
+        'site-tasks',
+        'webapp-builds',
+        // 'webapp-plugin-builds',
     ]
 ];
