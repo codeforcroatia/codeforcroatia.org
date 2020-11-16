@@ -1,12 +1,12 @@
 # 
 # Translators:
-# Miroslav Schlossberg CfC, 2020
+# Miroslav (Code for Croatia), 2020
 # 
 msgid ""
 msgstr ""
-"Last-Translator: Miroslav Schlossberg CfC, 2020\n"
+"Last-Translator: Miroslav (Code for Croatia), 2020\n"
 "Language-Team: Croatian (Croatia) (https://www.transifex.com/code-for-croatia/teams/52766/hr_HR/)\n"
-"Language: hr\n"
+"Language: hr_HR\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #: html-templates/bigscreen.tpl:61
@@ -17,9 +17,13 @@ msgstr "Dolazak u %s"
 msgid "Latest Checkins"
 msgstr "Posljednji dolasci"
 
+#: html-templates/help-wanted.tpl:3
+msgid "Potrebna pomoć"
+msgstr "Potrebna pomoć"
+
 #: html-templates/home.tpl:21
 msgid "Chat with us on Slack"
-msgstr "Pričaj s nama na Slacku"
+msgstr "Pričajmo na Slacku"
 
 #: html-templates/home.tpl:23
 msgid "Join Us!"
@@ -47,7 +51,7 @@ msgstr "Potraži sva ažuriranja projekata"
 
 #: html-templates/home.tpl:98
 msgid "Browse all project buzz"
-msgstr "Pretraži sve buzz vijesti za ovaj projekt"
+msgstr "Pretraži sve buzz vijesti"
 
 #: html-templates/home.tpl:99
 msgid "Browse all blog posts"
@@ -58,7 +62,6 @@ msgid "No project updates have been posted on this site yet."
 msgstr "Na ovoj stranici nema aktivnosti na projektima."
 
 #: html-templates/how-to-help.tpl:3 html-templates/how-to-help.tpl:6
-#: html-templates/includes/site.nav-sitelinks.tpl:40
 msgid "How to Help"
 msgstr "Kako mogu pomoći"
 
@@ -88,7 +91,7 @@ msgid "Our Mission"
 msgstr "Naša misija"
 
 #: html-templates/resources.tpl:3 html-templates/resources.tpl:9
-#: html-templates/includes/site.nav-sitelinks.tpl:28
+#: html-templates/includes/site.nav-sitelinks.tpl:6
 msgid "Resources"
 msgstr "Resursi"
 
@@ -155,7 +158,7 @@ msgid "Help wanted"
 msgstr "Potrebna je pomoć"
 
 #: html-templates/cfapi/master.tpl:137
-#: html-templates/includes/site.nav-sitelinks.tpl:12
+#: html-templates/includes/site.nav-sitelinks.tpl:17
 msgid "Chat"
 msgstr "Chat"
 
@@ -402,7 +405,7 @@ msgstr "Resursi civilnih hakera"
 
 #: html-templates/includes/site.footer.tpl:6
 msgid "Powered by %s &mdash; a %s project."
-msgstr "Pokreće %s &mdash; projekt grupe %s."
+msgstr "Pokreće %s platforma &mdash; %s projekt."
 
 #: html-templates/includes/site.header.tpl:36
 msgid "Sign up"
@@ -412,66 +415,97 @@ msgstr "Registriraj se!"
 msgid "Project Guidelines"
 msgstr "Smjernice za projekte"
 
-#: html-templates/includes/site.nav-sitelinks.tpl:10
-msgid "Connect"
-msgstr "Spoji"
+#: html-templates/includes/site.nav-sitelinks.tpl:7
+msgid "Featured Projects"
+msgstr "Istaknuti projekti"
 
-#: html-templates/includes/site.nav-sitelinks.tpl:12
-msgid "Slack"
-msgstr "Slack"
+#: html-templates/includes/site.nav-sitelinks.tpl:8
+msgid "We Have Right to Know"
+msgstr "Imamo pravo znati"
+
+#: html-templates/includes/site.nav-sitelinks.tpl:9
+msgid "Open Data Day"
+msgstr "Dan otvorenih podataka"
 
 #: html-templates/includes/site.nav-sitelinks.tpl:13
+msgid "Community"
+msgstr "Zajednica"
+
+#: html-templates/includes/site.nav-sitelinks.tpl:15
+msgid "How to Join"
+msgstr "Kako se pridružiti"
+
+#: html-templates/includes/site.nav-sitelinks.tpl:16
+msgid "Start a Group in Your Town"
+msgstr "Započni grupu u svom mjestu"
+
+#: html-templates/includes/site.nav-sitelinks.tpl:18
+msgid "Get Invite"
+msgstr "Zatraži pozivnicu"
+
+#: html-templates/includes/site.nav-sitelinks.tpl:19
+msgid "Forum"
+msgstr "Forum"
+
+#: html-templates/includes/site.nav-sitelinks.tpl:20
 msgid "Contact Us"
 msgstr "Kontaktiraj nas"
 
-#: html-templates/includes/site.nav-sitelinks.tpl:14
-msgid "Browse Members"
+#: html-templates/includes/site.nav-sitelinks.tpl:21
+msgid "Meetups"
+msgstr "Sastanci"
+
+#: html-templates/includes/site.nav-sitelinks.tpl:22
+#: html-templates/people/people.tpl:3
+#: html-templates/projects/memberAdded.tpl:3
+msgid "Members"
 msgstr "Članovi"
 
-#: html-templates/includes/site.nav-sitelinks.tpl:19
-#: html-templates/events/event.tpl:54 html-templates/events/eventEdit.tpl:3
-#: html-templates/events/eventEdit.tpl:17
-#: html-templates/events/eventSegment.tpl:28
-#: html-templates/events/eventSegmentEdit.tpl:3
-#: html-templates/events/eventSegmentEdit.tpl:18
-#: html-templates/events/events.tpl:3 html-templates/events/events.tpl:14
-#: html-templates/projects/project.tpl:211
-msgid "Events"
-msgstr "Događaji"
-
-#: html-templates/includes/site.nav-sitelinks.tpl:21
-msgid "Programs"
-msgstr "Programi"
-
-#: html-templates/includes/site.nav-sitelinks.tpl:35
+#: html-templates/includes/site.nav-sitelinks.tpl:26
 msgid "About"
 msgstr "Informacije"
 
-#: html-templates/includes/site.nav-sitelinks.tpl:37
-msgid "Mission"
-msgstr "Naš cilj"
+#: html-templates/includes/site.nav-sitelinks.tpl:28
+msgid "About Us"
+msgstr "O nama"
 
-#: html-templates/includes/site.nav-sitelinks.tpl:38
-msgid "Leadership"
-msgstr "Vodstvo"
+#: html-templates/includes/site.nav-sitelinks.tpl:29
+msgid "Organizing team"
+msgstr "Organizacijska ekipa"
 
-#: html-templates/includes/site.nav-sitelinks.tpl:39
-msgid "Sponsors"
-msgstr "Sponzori"
+#: html-templates/includes/site.nav-sitelinks.tpl:30
+msgid "Join the Organizing team"
+msgstr "Pridruži se organizacijskoj ekipi"
 
-#: html-templates/includes/site.nav-sitelinks.tpl:41
+#: html-templates/includes/site.nav-sitelinks.tpl:31
+msgid "Local Groups"
+msgstr "Lokalne grupe"
+
+#: html-templates/includes/site.nav-sitelinks.tpl:32
+msgid "Blog"
+msgstr "Blog"
+
+#: html-templates/includes/site.nav-sitelinks.tpl:33
 msgid "Code of Conduct"
 msgstr "Kodeks ponašanja"
 
-#: html-templates/includes/site.nav-userlinks.tpl:1
+#: html-templates/includes/site.nav-userlinks.tpl:6
 msgid "View My Profile"
 msgstr "Otvori moj profil"
 
-#: html-templates/includes/site.nav-userlinks.tpl:2
+#: html-templates/includes/site.nav-userlinks.tpl:7
 msgid "Edit My Profile"
 msgstr "Uredi moj profil"
 
-#: html-templates/includes/site.nav-userlinks.tpl:3
+#: html-templates/includes/site.nav-userlinks.tpl:8
+msgid "General chat room"
+msgstr "Glavna chat soba"
+
+#: html-templates/includes/site.nav-userlinks.tpl:9
+msgid "Team Inbox"
+msgstr "Projektni inbox"
+
+#: html-templates/includes/site.nav-userlinks.tpl:10
 msgid "Logout"
 msgstr "Odjava"
 
@@ -487,11 +521,6 @@ msgstr "CfA Brigade Network Forum"
 msgid "Open Data Stack Exchange"
 msgstr "Open Data Stack Exchange"
 
-#: html-templates/people/people.tpl:3
-#: html-templates/projects/memberAdded.tpl:3
-msgid "Members"
-msgstr "Članovi"
-
 #: html-templates/people/people.tpl:14
 msgid "Registered Members"
 msgstr "Registrirani članovi"
@@ -506,7 +535,7 @@ msgstr "teme"
 
 #: html-templates/people/person.tpl:68
 msgid "Tech I'm interested in"
-msgstr "Tehnologija koja me zanima"
+msgstr "Tehnologije koje me zanimju"
 
 #: html-templates/people/person.tpl:77
 msgid "Topics I'm interested in"
@@ -528,6 +557,16 @@ msgstr "Osoba je obrisana"
 #: html-templates/people/personDeleted.tpl:13
 msgid "Retun to member list"
 msgstr "Povratak na popis članova"
+
+#: html-templates/events/event.tpl:54 html-templates/events/eventEdit.tpl:3
+#: html-templates/events/eventEdit.tpl:17
+#: html-templates/events/eventSegment.tpl:28
+#: html-templates/events/eventSegmentEdit.tpl:3
+#: html-templates/events/eventSegmentEdit.tpl:18
+#: html-templates/events/events.tpl:3 html-templates/events/events.tpl:14
+#: html-templates/projects/project.tpl:211
+msgid "Events"
+msgstr "Događaji"
 
 #: html-templates/events/event.tpl:59
 msgid "Edit Event"
@@ -692,7 +731,7 @@ msgstr "Posljednji buzz"
 
 #: html-templates/login/login.tpl:10
 msgid "Login to %s"
-msgstr "Prijava u %s"
+msgstr "%s prijava"
 
 #: html-templates/login/login.tpl:20 html-templates/login/login.tpl:23
 msgid "Login Failed: %s"
@@ -700,7 +739,7 @@ msgstr "Prijava neuspjela: %s"
 
 #: html-templates/login/login.tpl:47
 msgid "You can %s, or %s now."
-msgstr "Možete %s, ili %s sada."
+msgstr "Možete %s, ili %s."
 
 #: html-templates/login/login.tpl:17
 #: html-templates/register/recoverPassword.tpl:16
@@ -720,11 +759,11 @@ msgstr "Lozinka"
 
 #: html-templates/login/login.tpl:44
 msgid "recover your password"
-msgstr "zatraži svoju lozinku"
+msgstr "zatražiti novu lozinku"
 
 #: html-templates/login/login.tpl:45
 msgid "create an account"
-msgstr "Kreiraj račun"
+msgstr "kreirati novi korisnički račun"
 
 #: html-templates/checkin/checkinComplete.tpl:9
 msgid "Success!"
