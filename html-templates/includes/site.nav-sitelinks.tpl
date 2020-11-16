@@ -1,16 +1,16 @@
     <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{_ "Projects"} <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="/projects">{_ "Browse Projects"}</a></li>
-          <li><a href="/pages/project_guidelines">{_ "Project Guidelines"}</a></li>
-          <li><a href="/resources">{_ "Resources"}</a></li>
-          <li class="dropdown-header">{_ "Featured Projects"}</li> <!-- Featured projects -->
-          <li><a href="/projects/zahtjev_za_pravo_na_pristup_informacijama">{_ "We Have Right to Know"}</a></li>
-          <li><a href="/projects/opendataday">{_ "Open Data Day"}</a></li>
-        </ul>
+        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{_ "Projects"}</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/projects">{_ "Browse Projects"}</a>
+          <a class="dropdown-item" href="/pages/project_guidelines">{_ "Project Guidelines"}</a>
+          <a class="dropdown-item" href="/resources">{_ "Resources"}</a>
+          <div class="dropdown-header">{_ "Featured Projects"}</div> <!-- Featured projects -->
+          <a class="dropdown-item" href="/projects/zahtjev_za_pravo_na_pristup_informacijama">{_ "We Have Right to Know"}</a>
+          <a class="dropdown-item" href="/projects/opendataday">{_ "Open Data Day"}</a>
+        </div>
     </li>
     <!--  <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{_ "Join Us"} <b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{_ "Join Us"}</a>
         <ul class="dropdown-menu">
           <li><a href="/how-to-help">{_ "How to Join"}</a></li>
           <li><a href="/pages/local_groups">{_ "Start a Group in Your Town"}</a></li>
@@ -20,20 +20,20 @@
         </ul>
     </li> -->
     <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{_ "Community"} <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="/how-to-help">{_ "How to Join"}</a></li>
-          <li><a href="/pages/local_groups">{_ "Start a Group in Your Town"}</a></li>
-          <li><a href="/chat" target="_blank">{_ "Chat"} <small>(Slack)</small></a></li>
-          <li><a href="/slackin">{_ "Get Invite"} <small>(Slack)</small></a></li>
-          <li><a href="http://diskurs.codeforcroatia.org" target="_blank">{_ "Forum"} <small>(Discourse)</small></a></li>
-          <li><a href="/contact">{_ "Contact Us"} <small>(Email)</small></a></li>
-          <li><a href="/pages/mjesecni_program_meetupa">{_ "Meetups"}</a></li>
-          <li><a href="/people">{_ "Members"}</a></li>
-        </ul>
+        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{_ "Community"}</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/how-to-help">{_ "How to Join"}</a></li>
+          <a class="dropdown-item" href="/pages/local_groups">{_ "Start a Group in Your Town"}</a>
+          <a class="dropdown-item" href="/chat" target="_blank">{_ "Chat"} <small>(Slack)</small></a>
+          <a class="dropdown-item" href="/slackin">{_ "Get Invite"} <small>(Slack)</small></a>
+          <a class="dropdown-item" href="http://diskurs.codeforcroatia.org" target="_blank">{_ "Forum"} <small>(Discourse)</small></a>
+          <a class="dropdown-item" href="/contact">{_ "Contact Us"} <small>(Email)</small></a>
+          <a class="dropdown-item" href="/pages/mjesecni_program_meetupa">{_ "Meetups"}</a>
+          <a class="dropdown-item" href="/people">{_ "Members"}</a>
+        </div>
     </li>
     <!-- <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{_ "Events"} <b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{_ "Events"}</a>
         <ul class="dropdown-menu">
           <li class="dropdown-header">{_ "Monthly Meetups"}</li>
             <li><a href="/pages/mjesecni_program_meetupa">{_ "Open House"}</a></li>
@@ -50,13 +50,13 @@
         </ul>
     </li> -->
     <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{_ "About"} <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="/pages/o_nama">{_ "About Us"}</a></li>
-          <li><a href="/pages/leadership">{_ "Organizing team"}</a></li>
-          <li><a href="/pages/leadership_vacancies">{_ "Join the Organizing team"}</a></li>
-          <li><a href="/pages/lokalne_grupe">{_ "Local Groups"}</a></li>
-          <li><a href="/blog">{_ "Blog"}</a></li>
-          <li><a href="/pages/code_of_conduct">{_ "Code of Conduct"}</a></li>
-        </ul>
+        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{_ "About"}</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/pages/o_nama">{_ "About Us"}</a>
+          <a class="dropdown-item" href="/pages/leadership">{_ "Organizing team"}</a>
+          <a class="dropdown-item" href="/pages/leadership_vacancies">{_ "Join the Organizing team"}</a>
+          <a class="dropdown-item" href="/pages/lokalne_grupe">{_ "Local Groups"}</a>
+          <a class="dropdown-item" href="/blog">{_ "Blog"}</a>
+          <a class="dropdown-item" href="/pages/code_of_conduct">{_ "Code of Conduct"}</a>
+        </div>
     </li>
