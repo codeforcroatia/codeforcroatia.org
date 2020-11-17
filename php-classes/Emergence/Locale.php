@@ -8,8 +8,12 @@ use Emergence_FS;
 
 class Locale
 {
-    public static $default = 'en_US.utf8';
+    public static $default;
     protected static $_requestedLocale;
+
+    if (empty(static::$default)) {
+            public static $default = 'en_US.utf8';
+        }
 
     /**
      * Gets locale that should be used for the current request, based on
@@ -43,6 +47,9 @@ class Locale
         ) {
             return static::$_requestedLocale = $requestedLocale;
         }
+
+        // prefer to use default language over Accept-Language header // CfC CUSTOM OPTION
+        return static::$_requestedLocale = static::$default;
 
         // find matching locale from Accept-Language header
         foreach (preg_split('/\s*,\s*/', $_SERVER['HTTP_ACCEPT_LANGUAGE']) AS $requestedLanguage) {
