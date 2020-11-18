@@ -6,7 +6,7 @@ Git::$repositories['codeforcroatia'] = [
     'workingBranch' => 'emergence/vfs-site/master',
     'trees' => [
         'api-docs',
-        'console-commands',
+        // 'console-commands',
         'cypress',
         'data-exporters',
         'dwoo-plugins',
