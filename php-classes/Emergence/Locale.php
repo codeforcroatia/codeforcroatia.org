@@ -10,10 +10,13 @@ class Locale
 {
     public static $default;
     protected static $_requestedLocale;
-
-    if (empty(static::$default)) {
+    
+    public static function __classLoaded()
+    {
+        if (empty(static::$default)) {
             public static $default = 'en_US.utf8';
         }
+    }
 
     /**
      * Gets locale that should be used for the current request, based on
