@@ -14,7 +14,7 @@ class Locale
     public static function __classLoaded()
     {
         if (empty(static::$default)) {
-            public static $default = 'en_US.utf8';
+            static::$default = 'en_US.utf8';
         }
     }
 
