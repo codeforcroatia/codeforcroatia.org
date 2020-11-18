@@ -11,6 +11,8 @@ class Locale
     public static $default;
     protected static $_requestedLocale;
     
+    /**
+    * this makes some issue on 
     // fall-back to en_US as default language in case nothing is defined
     public static function __classLoaded()
     {
@@ -18,6 +20,7 @@ class Locale
             public static $default = 'en_US.utf8';
         }
     }
+    */
 
     /**
      * Gets locale that should be used for the current request, based on
