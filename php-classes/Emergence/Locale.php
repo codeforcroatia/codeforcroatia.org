@@ -8,15 +8,8 @@ use Emergence_FS;
 
 class Locale
 {
-    public static $default;
+    public static $default = 'en_US.utf8';
     protected static $_requestedLocale;
-    
-    public static function __classLoaded()
-    {
-        if (empty(static::$default)) {
-            static::$default = 'en_US.utf8';
-        }
-    }
 
     /**
      * Gets locale that should be used for the current request, based on
