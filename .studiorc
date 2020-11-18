@@ -1,0 +1,8 @@
+#!/bin/bash
+
+hab pkg install emergence/studio
+source "$(hab pkg path emergence/studio)/studio.sh"
+
+
+# final blank line
+echo
