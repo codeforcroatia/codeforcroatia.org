@@ -13,7 +13,13 @@ Git::$repositories['codeforcroatia'] = [
         'event-handlers',
         'html-templates',
         'php-classes',
-        'php-config',
+        // 'php-config',
+        'php-config' => [
+            'exclude' => [
+                // secrets config:
+                '#^/RemoteSystems(/|$)#'
+            ]
+        ],
         'php-migrations',
         'phpunit-tests',
         // 'sencha-workspace',
