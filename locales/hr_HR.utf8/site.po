@@ -17,6 +17,26 @@ msgstr "Dolazak u %s"
 msgid "Latest Checkins"
 msgstr "Posljednji dolasci"
 
+#: html-templates/confirm.tpl:8 html-templates/subtemplates/blog.tpl:45
+#: html-templates/subtemplates/buzz.tpl:34
+#: html-templates/subtemplates/comments.tpl:62
+#: html-templates/subtemplates/updates.tpl:27
+#: html-templates/blog/blogPost.tpl:85 html-templates/pages/page.tpl:29
+msgid "Delete"
+msgstr "Obriši"
+
+#: html-templates/confirm.tpl:10
+msgid "Please confirm"
+msgstr "Molimo potvrdi"
+
+#: html-templates/confirm.tpl:15
+msgid "No"
+msgstr "Ne"
+
+#: html-templates/confirm.tpl:16
+msgid "Yes"
+msgstr "Da"
+
 #: html-templates/help-wanted.tpl:3
 msgid "Potrebna pomoć"
 msgstr "Potrebna pomoć"
@@ -40,6 +60,10 @@ msgstr "Trenutni meetup"
 #: html-templates/home.tpl:60
 msgid "Checked-in Members"
 msgstr "Potvđeni članovi"
+
+#: html-templates/home.tpl:71
+msgid "No Current Project"
+msgstr "Nema izabranog projekta"
 
 #: html-templates/home.tpl:94
 msgid "Latest Project Activity"
@@ -95,108 +119,9 @@ msgstr "Naša misija"
 msgid "Resources"
 msgstr "Resursi"
 
-#: html-templates/slackin.tpl:3 html-templates/cfapi/master.tpl:128
+#: html-templates/slackin.tpl:3
 msgid "Join us on chat"
 msgstr "Pridruži nam se na Slacku"
-
-#: html-templates/cfapi/code-for-croatia.tpl:13
-#: html-templates/cfapi/open-zagreb.tpl:13
-msgid ""
-"Zahvale %s za Bootstrap Registration Form Template. CodeAcross 2015 "
-"fotografiju u pozadini ustupio %s."
-msgstr ""
-"Zahvale %s za Bootstrap Registration Form Template. CodeAcross 2015 "
-"fotografiju u pozadini ustupio %s."
-
-#: html-templates/cfapi/master.tpl:114
-msgid "%s Welcome %s to event"
-msgstr "%s Dobrodošli %s na događaj"
-
-#: html-templates/cfapi/master.tpl:126
-msgid "Sign up at %s codeforcroatia.org %s"
-msgstr "Prijavite se na %s codeforcroatia.org %s"
-
-#: html-templates/cfapi/master.tpl:3
-msgid "Event Checkin"
-msgstr "Prijava za događaj"
-
-#: html-templates/cfapi/master.tpl:116
-msgid "WiFi SSID"
-msgstr "WiFi SSID"
-
-#: html-templates/cfapi/master.tpl:117
-msgid "WiFi PWD"
-msgstr "WiFi PWD"
-
-#: html-templates/cfapi/master.tpl:122
-msgid "First time here?"
-msgstr "Prvi puta ste ovdje?"
-
-#: html-templates/cfapi/master.tpl:127
-msgid "Check in to this event"
-msgstr "Prijavite se na događaj"
-
-#: html-templates/cfapi/master.tpl:129
-msgid "Look through the project directory for projects that interest you"
-msgstr "Pregledaj direktorij i pronađi projekt koji te zanima"
-
-#: html-templates/cfapi/master.tpl:130
-msgid "Find a regular or captain to ask about any projects you found"
-msgstr "Pronađite voditelja te provjerite oko projekata koje ste pronašli"
-
-#: html-templates/cfapi/master.tpl:135
-#: html-templates/includes/site.nav-sitelinks.tpl:2
-#: html-templates/projects/project.tpl:3
-#: html-templates/projects/projectEdit.tpl:3
-#: html-templates/projects/projectSaved.tpl:3
-#: html-templates/projects/projects.tpl:3
-msgid "Projects"
-msgstr "Projekti"
-
-#: html-templates/cfapi/master.tpl:136
-msgid "Help wanted"
-msgstr "Potrebna je pomoć"
-
-#: html-templates/cfapi/master.tpl:137
-#: html-templates/includes/site.nav-sitelinks.tpl:17
-msgid "Chat"
-msgstr "Chat"
-
-#: html-templates/cfapi/master.tpl:145
-msgid "Check in now"
-msgstr "Upiši se sada"
-
-#: html-templates/cfapi/master.tpl:147
-msgid "Fill in the form below to check in:"
-msgstr "Ispunite obrazac ispod da se upišete:"
-
-#: html-templates/cfapi/master.tpl:149
-#: html-templates/includes/site.header.tpl:34
-#: html-templates/login/login.tpl:41
-msgid "Login"
-msgstr "Prijava"
-
-#: html-templates/cfapi/master.tpl:149
-msgid ""
-"to fill in automatically, otherwise please fill in the form below to check "
-"in:"
-msgstr "za automatski upis, u suprotnome ispunite obrazac ispod za upis:"
-
-#: html-templates/cfapi/master.tpl:160
-msgid "Name"
-msgstr "Ime"
-
-#: html-templates/cfapi/master.tpl:164 html-templates/register/register.tpl:48
-msgid "Email"
-msgstr "Email"
-
-#: html-templates/cfapi/master.tpl:168
-msgid "What event is this"
-msgstr "Koji je ovo događaj"
-
-#: html-templates/cfapi/master.tpl:172
-msgid "Date"
-msgstr "Datum"
 
 #: html-templates/profile/profileEdit.tpl:18
 msgid "Manage %s Profile"
@@ -221,11 +146,14 @@ msgid "Person subclass"
 msgstr "Podrazred osobe"
 
 #: html-templates/profile/profileEdit.tpl:65
+#: html-templates/events/event.tpl:88
+#: html-templates/events/eventSegment.tpl:57
+#: html-templates/events/events.tpl:63
 msgid "Location"
 msgstr "Mjesto"
 
 #: html-templates/profile/profileEdit.tpl:66
-#: html-templates/people/person.tpl:41
+#: html-templates/people/person.tpl:42
 msgid "About Me"
 msgstr "O meni"
 
@@ -271,6 +199,11 @@ msgstr "Nova lozinka (potvrdi)"
 msgid "Using [Gravatar](//gravatar.com) image for %s."
 msgstr "Korištenje [Gravatar](//gravatar.com) slike za %s."
 
+#: html-templates/profile/profileEdit.tpl:3
+#: html-templates/people/person.tpl:13
+msgid "Edit Profile"
+msgstr "Uredi profil"
+
 #: html-templates/profile/profileEdit.tpl:18
 msgid "Manage Your Profile"
 msgstr "Uredi profil"
@@ -306,7 +239,7 @@ msgid "Profile Details"
 msgstr "Detalji profila"
 
 #: html-templates/profile/profileEdit.tpl:75
-#: html-templates/people/person.tpl:48
+#: html-templates/people/person.tpl:49
 msgid "Contact Information"
 msgstr "Kontakt"
 
@@ -331,6 +264,10 @@ msgstr "Odaberi kao zadano:"
 msgid "Make Default"
 msgstr "Postavi kao zadano"
 
+#: html-templates/profile/profileEdit.tpl:130
+msgid "Photo Upload"
+msgstr "Upload slike"
+
 #: html-templates/profile/profileEdit.tpl:135
 msgid "Upload New Photo"
 msgstr "Uploadaj novu fotografiju"
@@ -341,30 +278,117 @@ msgstr "Pročitaj više&hellip;"
 
 #: html-templates/subtemplates/blog.tpl:36
 #: html-templates/subtemplates/buzz.tpl:33
-#: html-templates/subtemplates/comments.tpl:50
+#: html-templates/subtemplates/comments.tpl:27
+#: html-templates/subtemplates/comments.tpl:52
 #: html-templates/subtemplates/updates.tpl:26
-#: html-templates/blog/blogPost.tpl:76
+#: html-templates/blog/blogPost.tpl:76 html-templates/events/eventEdit.tpl:19
+#: html-templates/events/eventSegmentEdit.tpl:21
+#: html-templates/project-buzz/projectBuzzEdit.tpl:3
+#: html-templates/project-updates/projectUpdateEdit.tpl:3
+#: html-templates/pages/page.tpl:20
 msgid "Edit"
 msgstr "Uredi"
 
-#: html-templates/subtemplates/blog.tpl:45
-#: html-templates/subtemplates/buzz.tpl:34
-#: html-templates/subtemplates/updates.tpl:27
-#: html-templates/blog/blogPost.tpl:85
-msgid "Delete"
-msgstr "Obriši"
+#: html-templates/subtemplates/blog.tpl:39 html-templates/blog/blogPost.tpl:79
+msgid "Delete Post"
+msgstr "Obriši post"
+
+#: html-templates/subtemplates/blog.tpl:40
+#: html-templates/subtemplates/comments.tpl:57
+#: html-templates/blog/blogPost.tpl:80 html-templates/pages/page.tpl:24
+msgid "Don&rsquo;t Delete"
+msgstr "Nemoj obrisati"
+
+#: html-templates/subtemplates/blog.tpl:41 html-templates/blog/blogPost.tpl:81
+#: html-templates/pages/page.tpl:25
+msgid "Deleting Post"
+msgstr "Brisanje posta"
+
+#: html-templates/subtemplates/blog.tpl:42 html-templates/blog/blogPost.tpl:82
+msgid "Are you sure you want to delete the post"
+msgstr "Sigurno želiš obrisati post"
+
+#: html-templates/subtemplates/blog.tpl:45 html-templates/blog/blogPost.tpl:85
+msgid "Blog post deleted"
+msgstr "Blog post je obrisan"
+
+#: html-templates/subtemplates/blog.tpl:64
+msgid "Be the first to comment."
+msgstr "Napiši komentar."
+
+#: html-templates/subtemplates/blog.tpl:72
+msgid "Tags"
+msgstr "Oznake"
 
 #: html-templates/subtemplates/buzz.tpl:26
 msgid "Read the full article on %s"
 msgstr "Pročitaj cijeli članak na %s"
 
+#: html-templates/subtemplates/buzz.tpl:14
+#: html-templates/project-buzz/projectBuzzEdit.tpl:3
+msgid "Buzz"
+msgstr "Objave u medijima"
+
 #: html-templates/subtemplates/buzz.tpl:28
 msgid "Published"
 msgstr "Objavljeno"
 
-#: html-templates/subtemplates/comments.tpl:77
+#: html-templates/subtemplates/comments.tpl:24
+msgid "You can use %s for formatting."
+msgstr "Koristi %s za oblikovanje teksta."
+
+#: html-templates/subtemplates/comments.tpl:33
+msgid "$s to post a comment."
+msgstr ""
+
+#: html-templates/subtemplates/comments.tpl:23
+msgid "Markdown"
+msgstr "Markdown"
+
+#: html-templates/subtemplates/comments.tpl:27
+msgid "Post"
+msgstr "Objava"
+
+#: html-templates/subtemplates/comments.tpl:27
+msgid "Comment"
+msgstr "Komentar"
+
+#: html-templates/subtemplates/comments.tpl:32
+#: html-templates/register/register.tpl:74
+msgid "Log in"
+msgstr "Prijavi se"
+
+#: html-templates/subtemplates/comments.tpl:56
+msgid "Delete Comment"
+msgstr "Obriši komentar"
+
+#: html-templates/subtemplates/comments.tpl:58
+msgid "Deleting Comment"
+msgstr "Brisanje komentara"
+
+#: html-templates/subtemplates/comments.tpl:59
+msgid "Are you sure you want to delete this comment from"
+msgstr "Sigurno želiš obrisati komentar iz"
+
+#: html-templates/subtemplates/comments.tpl:62
+msgid "Comment deleted"
+msgstr "Komentar je obrisan"
+
+#: html-templates/subtemplates/comments.tpl:71
+msgid "No comments have been posted yet."
+msgstr "Još nema komentara."
+
+#: html-templates/subtemplates/comments.tpl:79
 msgid "Comments"
 msgstr "Komentari"
+
+#: html-templates/subtemplates/forms.tpl:78
+msgid "Forgot?"
+msgstr "Zaboravljena?"
+
+#: html-templates/subtemplates/locale-selector.tpl:4
+msgid "Language"
+msgstr "Jezik"
 
 #: html-templates/subtemplates/meetups.tpl:25
 msgid "RSVP @ %s"
@@ -383,6 +407,8 @@ msgid "Maintainer"
 msgstr "Maintainer"
 
 #: html-templates/subtemplates/projects.tpl:17
+#: html-templates/checkin/topMembers.tpl:12
+#: html-templates/projects/project.tpl:294
 msgid "Member"
 msgstr "Član"
 
@@ -390,6 +416,35 @@ msgstr "Član"
 #: html-templates/subtemplates/updates.tpl:16
 msgid "Update #%s"
 msgstr "Novost #%s"
+
+#: html-templates/blog/blogPost.tpl:96
+msgid "on %s by %s"
+msgstr "dana %s od autora %s"
+
+#: html-templates/blog/blogPosts.tpl:34
+msgid "%s posts:"
+msgstr "%s objava:"
+
+#: html-templates/blog/blogPosts.tpl:8
+#: html-templates/includes/site.nav-sitelinks.tpl:32
+msgid "Blog"
+msgstr "Blog"
+
+#: html-templates/blog/blogPosts.tpl:18
+msgid "New Post"
+msgstr "Nova objava"
+
+#: html-templates/blog/blogPosts.tpl:20
+msgid "Blog Feed"
+msgstr "Blog"
+
+#: html-templates/blog/blogPosts.tpl:27
+msgid "Stay tuned for the first post"
+msgstr "Prati nas za objave"
+
+#: html-templates/includes/home.announcements.tpl:6
+msgid "Announcements"
+msgstr "Važne najave"
 
 #: html-templates/includes/home.meetups.tpl:6
 msgid "Next Meetup"
@@ -407,9 +462,30 @@ msgstr "Resursi civilnih hakera"
 msgid "Powered by %s &mdash; a %s project."
 msgstr "Pokreće %s platforma &mdash; %s projekt."
 
+#: html-templates/includes/site.header.tpl:15
+msgid "Search"
+msgstr "Traži"
+
+#: html-templates/includes/site.header.tpl:34
+#: html-templates/login/login.tpl:41
+msgid "Login"
+msgstr "Prijava"
+
 #: html-templates/includes/site.header.tpl:36
 msgid "Sign up"
 msgstr "Registriraj se!"
+
+#: html-templates/includes/site.header.tpl:42
+msgid "Toggle navigation"
+msgstr "Prebaci navigaciju"
+
+#: html-templates/includes/site.nav-sitelinks.tpl:2
+#: html-templates/projects/project.tpl:3
+#: html-templates/projects/projectEdit.tpl:3
+#: html-templates/projects/projectSaved.tpl:3
+#: html-templates/projects/projects.tpl:3
+msgid "Projects"
+msgstr "Projekti"
 
 #: html-templates/includes/site.nav-sitelinks.tpl:5
 msgid "Project Guidelines"
@@ -439,6 +515,10 @@ msgstr "Kako se pridružiti"
 msgid "Start a Group in Your Town"
 msgstr "Započni grupu u svom mjestu"
 
+#: html-templates/includes/site.nav-sitelinks.tpl:17
+msgid "Chat"
+msgstr "Chat"
+
 #: html-templates/includes/site.nav-sitelinks.tpl:18
 msgid "Get Invite"
 msgstr "Zatraži pozivnicu"
@@ -448,6 +528,7 @@ msgid "Forum"
 msgstr "Forum"
 
 #: html-templates/includes/site.nav-sitelinks.tpl:20
+#: html-templates/contact/contact.tpl:18
 msgid "Contact Us"
 msgstr "Kontaktiraj nas"
 
@@ -457,7 +538,10 @@ msgstr "Sastanci"
 
 #: html-templates/includes/site.nav-sitelinks.tpl:22
 #: html-templates/people/people.tpl:3
+#: html-templates/projects/maintainerChanged.tpl:3
 #: html-templates/projects/memberAdded.tpl:3
+#: html-templates/projects/memberRemoved.tpl:3
+#: html-templates/projects/project.tpl:163
 msgid "Members"
 msgstr "Članovi"
 
@@ -480,10 +564,6 @@ msgstr "Pridruži se organizacijskoj ekipi"
 #: html-templates/includes/site.nav-sitelinks.tpl:31
 msgid "Local Groups"
 msgstr "Lokalne grupe"
-
-#: html-templates/includes/site.nav-sitelinks.tpl:32
-msgid "Blog"
-msgstr "Blog"
 
 #: html-templates/includes/site.nav-sitelinks.tpl:33
 msgid "Code of Conduct"
@@ -533,19 +613,35 @@ msgstr "vještine"
 msgid "topics"
 msgstr "teme"
 
-#: html-templates/people/person.tpl:68
+#: html-templates/people/person.tpl:16
+msgid "Delete %s"
+msgstr "Obriši %s"
+
+#: html-templates/people/person.tpl:52 html-templates/register/register.tpl:48
+msgid "Email"
+msgstr "Email"
+
+#: html-templates/people/person.tpl:57
+msgid "Twitter"
+msgstr "Twitter"
+
+#: html-templates/people/person.tpl:62
+msgid "Phone"
+msgstr "Telefon"
+
+#: html-templates/people/person.tpl:69
 msgid "Tech I'm interested in"
 msgstr "Tehnologije koje me zanimju"
 
-#: html-templates/people/person.tpl:77
+#: html-templates/people/person.tpl:78
 msgid "Topics I'm interested in"
 msgstr "Teme koje me zanimaju"
 
-#: html-templates/people/person.tpl:86
+#: html-templates/people/person.tpl:87
 msgid "My projects"
 msgstr "Moji projekti"
 
-#: html-templates/people/person.tpl:95
+#: html-templates/people/person.tpl:96
 msgid "Last event checkin"
 msgstr "Posljednji dolazak na događaj"
 
@@ -558,8 +654,21 @@ msgstr "Osoba je obrisana"
 msgid "Retun to member list"
 msgstr "Povratak na popis članova"
 
+#: html-templates/tags/tagDeleted.tpl:11
+msgid "Tag %s has been removed from %s."
+msgstr "Oznaka %s je uklonjena iz %s."
+
+#: html-templates/tags/tagDeleted.tpl:3 html-templates/tags/tagDeleted.tpl:7
+msgid "Tag deleted"
+msgstr "Oznaka je obrisana"
+
+#: html-templates/tags/tagDeleted.tpl:13
+msgid "Retun to tag list"
+msgstr "Povratak na popis oznaka"
+
 #: html-templates/events/event.tpl:54 html-templates/events/eventEdit.tpl:3
 #: html-templates/events/eventEdit.tpl:17
+#: html-templates/events/eventSaved.tpl:3
 #: html-templates/events/eventSegment.tpl:28
 #: html-templates/events/eventSegmentEdit.tpl:3
 #: html-templates/events/eventSegmentEdit.tpl:18
@@ -576,8 +685,32 @@ msgstr "Uredi događaj"
 msgid "Add Segment"
 msgstr "Dodaj segment"
 
+#: html-templates/events/event.tpl:69 html-templates/events/events.tpl:38
+msgid "Status"
+msgstr "Status"
+
+#: html-templates/events/event.tpl:75
+#: html-templates/events/eventSegment.tpl:42
+msgid "Starts"
+msgstr "Počinje"
+
+#: html-templates/events/event.tpl:81
+#: html-templates/events/eventSegment.tpl:49
+msgid "Ends"
+msgstr "Završava"
+
+#: html-templates/events/event.tpl:104
+msgid "See the schedule"
+msgstr "Vidi raspored"
+
+#: html-templates/events/event.tpl:123
+#: html-templates/events/eventSegment.tpl:30
+msgid "Schedule"
+msgstr "Raspored"
+
 #: html-templates/events/eventEdit.tpl:3
 #: html-templates/events/eventSegmentEdit.tpl:3
+#: html-templates/project-updates/projectUpdateEdit.tpl:14
 #: html-templates/projects/projectEdit.tpl:3
 msgid "Edit %s"
 msgstr "Uredi %s"
@@ -588,6 +721,8 @@ msgstr "Uredi događaj"
 
 #: html-templates/events/eventEdit.tpl:3
 #: html-templates/events/eventSegmentEdit.tpl:3
+#: html-templates/project-buzz/projectBuzzEdit.tpl:3
+#: html-templates/project-updates/projectUpdateEdit.tpl:3
 #: html-templates/projects/projectEdit.tpl:3
 msgid "Create"
 msgstr "Kreiraj"
@@ -598,6 +733,8 @@ msgstr "Kreiraj novi događaj"
 
 #: html-templates/events/eventEdit.tpl:36
 #: html-templates/events/eventSegmentEdit.tpl:37
+#: html-templates/project-buzz/projectBuzzEdit.tpl:22
+#: html-templates/project-updates/projectUpdateEdit.tpl:21
 #: html-templates/projects/projectEdit.tpl:32
 msgid "There were problems with your entry:"
 msgstr "Našli smo probleme u tvom unosu:"
@@ -605,8 +742,8 @@ msgstr "Našli smo probleme u tvom unosu:"
 #: html-templates/events/eventEdit.tpl:47
 #: html-templates/events/eventSegmentEdit.tpl:56
 #: html-templates/projects/projectEdit.tpl:43
-msgid "Title"
-msgstr "Naslov"
+msgid "Title:"
+msgstr "Naslov:"
 
 #: html-templates/events/eventEdit.tpl:48
 msgid "Workshop #125"
@@ -614,42 +751,42 @@ msgstr "Workshop #125"
 
 #: html-templates/events/eventEdit.tpl:51
 #: html-templates/events/eventSegmentEdit.tpl:60
-msgid "Handle"
-msgstr "Nadimak"
-
-#: html-templates/events/eventEdit.tpl:51
-#: html-templates/events/eventSegmentEdit.tpl:60
-#: html-templates/projects/project.tpl:249
-msgid "optional"
-msgstr "proizvoljno"
+msgid "Handle (optional):"
+msgstr "Kratka oznaka za URL (opcionalno):"
 
 #: html-templates/events/eventEdit.tpl:52
 msgid "workshop-125"
 msgstr "workshop-125"
 
+#: html-templates/events/eventEdit.tpl:53
+#: html-templates/events/eventSegmentEdit.tpl:62
+msgid "Must be unique &mdash; leave blank to auto-generate"
+msgstr ""
+"Mora biti jedinstvena oznaka &mdash; ostavi prazno da se automatski kreira"
+
 #: html-templates/events/eventEdit.tpl:56
-msgid "Status"
-msgstr "Status"
+msgid "Status:"
+msgstr "Status:"
 
 #: html-templates/events/eventEdit.tpl:66
 #: html-templates/events/eventSegmentEdit.tpl:67
-msgid "Start time"
-msgstr "Vrijeme početka"
+msgid "Start time:"
+msgstr "Vrijeme početka:"
 
 #: html-templates/events/eventEdit.tpl:72
 #: html-templates/events/eventSegmentEdit.tpl:73
-msgid "End time"
-msgstr "Vrijeme završetka"
+msgid "End time:"
+msgstr "Vrijeme završetka:"
 
 #: html-templates/events/eventEdit.tpl:78
 #: html-templates/events/eventSegmentEdit.tpl:79
-msgid "Location name"
-msgstr "Naziv mjesta"
+msgid "Location name:"
+msgstr "Naziv mjesta:"
 
 #: html-templates/events/eventEdit.tpl:82
 #: html-templates/events/eventSegmentEdit.tpl:83
-msgid "Location address"
-msgstr "Adresa mjesta"
+msgid "Location address:"
+msgstr "Adresa mjesta:"
 
 #: html-templates/events/eventEdit.tpl:87
 #: html-templates/events/eventSegmentEdit.tpl:97
@@ -677,6 +814,10 @@ msgstr "Vaš je događaj kreiran: %s"
 msgid "Your changes to %s have been saved."
 msgstr "Tvoje promjene na %s su spremljene"
 
+#: html-templates/events/eventSaved.tpl:11
+msgid "Event Saved"
+msgstr "Događaj je spremljen"
+
 #: html-templates/events/eventSegment.tpl:34
 msgid "Edit Segment"
 msgstr "Uredi segment"
@@ -690,8 +831,8 @@ msgid "Create new event segment"
 msgstr "Kreiraj novi segment događaja"
 
 #: html-templates/events/eventSegmentEdit.tpl:48
-msgid "Event"
-msgstr "Događaj"
+msgid "Event:"
+msgstr "Događaj:"
 
 #: html-templates/events/eventSegmentEdit.tpl:57
 msgid "Opening Remarks"
@@ -705,13 +846,123 @@ msgstr "opening-remarks"
 msgid "Summary(.md)"
 msgstr "Sažetak(.md)"
 
+#: html-templates/events/eventSegmentEdit.tpl:92
+msgid ""
+"If provided, a summary will be shown directly under this event segment in "
+"the full schedule. Keep it short and sweet!"
+msgstr ""
+"Ako je naveden, sažetak će biti prikazan odmah ispod ovog segmenta u punom "
+"rasporedu. Neka bude kratko i jasno!"
+
 #: html-templates/events/eventSegmentEdit.tpl:103
 msgid "Create Event Segment"
 msgstr "Kreiraj segment događaja"
 
+#: html-templates/events/eventSegmentSaved.tpl:11
+msgid "Event Segment Saved"
+msgstr "Segment događaja je spremljen"
+
+#: html-templates/events/events.tpl:79
+msgid "No events were found, try creating one or %s."
+msgstr "Nema pronađenih događaja, pokušaj kreirati novi ili %s."
+
 #: html-templates/events/events.tpl:10
 msgid "Add Event&hellip;"
 msgstr "Dodaj događaj&hellip;"
+
+#: html-templates/events/events.tpl:46
+msgid "Start time"
+msgstr "Vrijeme početka"
+
+#: html-templates/events/events.tpl:54
+msgid "End time"
+msgstr "Vrijeme završetka"
+
+#: html-templates/events/events.tpl:78
+#: html-templates/projects/projects.tpl:105
+msgid "browse without any filters"
+msgstr "pretraži bez filtera"
+
+#: html-templates/events/events.tpl:81
+msgid "No events were found, try creating one."
+msgstr "Nema događaja... Kreiraj novi događaj."
+
+#: html-templates/contact/contact.tpl:3
+msgid "Contact"
+msgstr "Kontakt"
+
+#: html-templates/contact/contact.tpl:26
+msgid "Please double-check the fields highlighted below."
+msgstr "Provjeri označena polja."
+
+#: html-templates/contact/contact.tpl:34
+msgid "Optional. Include your area code."
+msgstr "Opcionalno. Uključi i predbroj."
+
+#: html-templates/contact/contact.tpl:46
+msgid "Send"
+msgstr "Pošalji"
+
+#: html-templates/project-buzz/projectBuzzDeleted.tpl:8
+#: html-templates/project-updates/projectUpdateDeleted.tpl:8
+msgid "%s deleted for %s"
+msgstr "%s obrisano za %s"
+
+#: html-templates/project-buzz/projectBuzzDeleted.tpl:3
+msgid "Buzz Deleted"
+msgstr "Medijska objava je obrisana"
+
+#: html-templates/project-buzz/projectBuzzEdit.tpl:15
+msgid "Edit buzz %s"
+msgstr "Uredi medijsku objavu %s"
+
+#: html-templates/project-buzz/projectBuzzEdit.tpl:57
+msgid "Image %s"
+msgstr "Slika %s"
+
+#: html-templates/project-buzz/projectBuzzEdit.tpl:61
+msgid "Summary %s"
+msgstr "Sažetak %s"
+
+#: html-templates/project-buzz/projectBuzzEdit.tpl:12
+msgid "Log new buzz"
+msgstr "Unesi novu medijsku objavu"
+
+#: html-templates/project-buzz/projectBuzzEdit.tpl:33
+msgid "Project:"
+msgstr "Projekt:"
+
+#: html-templates/project-buzz/projectBuzzEdit.tpl:37
+msgid "Headline:"
+msgstr "Naslovnica:"
+
+#: html-templates/project-buzz/projectBuzzEdit.tpl:41
+msgid "URL:"
+msgstr "Link na objavu:"
+
+#: html-templates/project-buzz/projectBuzzEdit.tpl:45
+msgid "Publish date/time:"
+msgstr "Datum i vrijeme objave:"
+
+#: html-templates/project-buzz/projectBuzzEdit.tpl:55
+msgid "Optional"
+msgstr "Opcionalno"
+
+#: html-templates/project-buzz/projectBuzzSaved.tpl:8
+msgid "%s for %s"
+msgstr "%s za %s"
+
+#: html-templates/project-buzz/projectBuzzSaved.tpl:3
+msgid "Buzz Saved"
+msgstr "Medijska objava je spremljena"
+
+#: html-templates/project-buzz/projectBuzzSaved.tpl:6
+msgid "posted"
+msgstr "objavljeno"
+
+#: html-templates/project-buzz/projectBuzzSaved.tpl:6
+msgid "updated"
+msgstr "ažurirano"
 
 #: html-templates/project-buzz/projectBuzzes.tpl:15
 msgid "Latest Buzz in %s"
@@ -728,6 +979,56 @@ msgstr "Dodaj buzz"
 #: html-templates/project-buzz/projectBuzzes.tpl:17
 msgid "Latest Buzz"
 msgstr "Posljednji buzz"
+
+#: html-templates/project-updates/projectUpdateDeleted.tpl:6
+#: html-templates/project-updates/projectUpdateEdit.tpl:13
+#: html-templates/project-updates/projectUpdateSaved.tpl:6
+#: html-templates/project-updates/projectUpdates.rss.tpl:33
+#: html-templates/projects/projectUpdateCreated.tpl:6
+msgid "Update #%u"
+msgstr "Novost #%u"
+
+#: html-templates/project-updates/projectUpdateDeleted.tpl:3
+msgid "Update Deleted"
+msgstr "Novost je obrisana"
+
+#: html-templates/project-updates/projectUpdateEdit.tpl:3
+msgid "Project Update"
+msgstr "Projektna novost"
+
+#: html-templates/project-updates/projectUpdateEdit.tpl:11
+msgid "Create new project upate"
+msgstr ""
+
+#: html-templates/project-updates/projectUpdateEdit.tpl:32
+msgid "Update"
+msgstr "Novost"
+
+#: html-templates/project-updates/projectUpdateSaved.tpl:8
+msgid "%s updated for %s"
+msgstr "%s ažurirano za %s"
+
+#: html-templates/project-updates/projectUpdateSaved.tpl:3
+msgid "Update Saved"
+msgstr "Novost je spremljena"
+
+#: html-templates/project-updates/projectUpdates.rss.tpl:17
+msgid "Updates from %s on %s"
+msgstr "Novost od %s na %s"
+
+#: html-templates/project-updates/projectUpdates.rss.tpl:19
+msgid "Updates from all projects on %s"
+msgstr "Novosti od svih projekata na %s"
+
+#: html-templates/project-updates/projectUpdates.rss.tpl:12
+#: html-templates/project-updates/projectUpdates.tpl:8
+#: html-templates/project-updates/projectUpdates.tpl:16
+msgid "Project Updates"
+msgstr "Projektne novosti"
+
+#: html-templates/project-updates/projectUpdates.tpl:14
+msgid "Project Updates in %s"
+msgstr "Projektne novosti za %s"
 
 #: html-templates/login/login.tpl:10
 msgid "Login to %s"
@@ -765,27 +1066,39 @@ msgstr "zatražiti novu lozinku"
 msgid "create an account"
 msgstr "kreirati novi korisnički račun"
 
+#: html-templates/checkin/checkinComplete.tpl:14
+msgid "Thanks for checking in to %s @ %s!"
+msgstr "Hvala na upisu za %s @ %s!"
+
+#: html-templates/checkin/checkinComplete.tpl:16
+msgid "Thanks for checking in @ %s!"
+msgstr "Hvala na upisu @ %s!"
+
+#: html-templates/checkin/checkinComplete.tpl:3
+msgid "Checkin Complete"
+msgstr "Upis je gotov"
+
 #: html-templates/checkin/checkinComplete.tpl:9
 msgid "Success!"
 msgstr "Uspiješno!"
 
-#: html-templates/checkin/checkinComplete.tpl:12
+#: html-templates/checkin/checkinComplete.tpl:18
 msgid "Things to do next:"
 msgstr "Sljedeće stvari koje možete učiniti:"
 
-#: html-templates/checkin/checkinComplete.tpl:15
+#: html-templates/checkin/checkinComplete.tpl:21
 msgid "Post an update to your project"
 msgstr "Objavite novosti o vašem projektu"
 
-#: html-templates/checkin/checkinComplete.tpl:17
+#: html-templates/checkin/checkinComplete.tpl:23
 msgid "Find or start a project"
 msgstr "Pronađite ili započnite projekt"
 
-#: html-templates/checkin/checkinComplete.tpl:20
+#: html-templates/checkin/checkinComplete.tpl:26
 msgid "Return to the home page"
 msgstr "Povratak na početnu stranicu"
 
-#: html-templates/checkin/checkinComplete.tpl:23
+#: html-templates/checkin/checkinComplete.tpl:29
 msgid "Add stuff to this list"
 msgstr "Dodajte stvari na ovaj popis"
 
@@ -794,14 +1107,54 @@ msgstr "Dodajte stvari na ovaj popis"
 msgid "Latest Events"
 msgstr "Posljednji događaji"
 
+#: html-templates/checkin/latestEvents.tpl:12
+msgid "Meetup ID"
+msgstr "Meetup ID"
+
+#: html-templates/checkin/latestEvents.tpl:13
+msgid "First Checkin"
+msgstr "Prvi upis"
+
+#: html-templates/checkin/latestEvents.tpl:14
+msgid "Last Checkin"
+msgstr "Zadnji upis"
+
+#: html-templates/checkin/latestEvents.tpl:15
+msgid "Checkins"
+msgstr "Upisi na meetupe"
+
 #: html-templates/checkin/topMembers.tpl:3
 #: html-templates/checkin/topMembers.tpl:7
 msgid "Top Members"
 msgstr "Naj članovi"
 
+#: html-templates/checkin/topMembers.tpl:13
+msgid "Event checkins"
+msgstr "Upisi na događaje"
+
+#: html-templates/projects/maintainerChanged.tpl:11
+msgid "%s has been made the maintainer of %s"
+msgstr "%s je promoviran u održavatelja za %s"
+
+#: html-templates/projects/maintainerChanged.tpl:7
+msgid "Maintainer Changed"
+msgstr "Održavatelj je izmjenjen"
+
 #: html-templates/projects/memberAdded.tpl:12
 msgid "%s has been added to %s"
 msgstr "%s je dodan na %s"
+
+#: html-templates/projects/memberAdded.tpl:10
+msgid "Member Added"
+msgstr "Član je dodan"
+
+#: html-templates/projects/memberRemoved.tpl:14
+msgid "%s has been removed from %s"
+msgstr "%s je ukljonjen iz %s"
+
+#: html-templates/projects/memberRemoved.tpl:12
+msgid "Member Removed"
+msgstr "Član je uklonjen"
 
 #: html-templates/projects/project.tpl:11
 msgid "Edit Project"
@@ -827,13 +1180,16 @@ msgid "Manage Members"
 msgstr "Uredi članove"
 
 #: html-templates/projects/project.tpl:34
-#: html-templates/projects/projectEdit.tpl:63
 msgid "Stage"
 msgstr "Faza"
 
 #: html-templates/projects/project.tpl:89
 msgid "README"
 msgstr "Opis projekta"
+
+#: html-templates/projects/project.tpl:110
+msgid "Need Help?"
+msgstr "Trebaš pomoć?"
 
 #: html-templates/projects/project.tpl:115
 msgid "Project Activity"
@@ -849,6 +1205,18 @@ msgstr ""
 #: html-templates/projects/project.tpl:133
 msgid "Project Info"
 msgstr "Informacije o projektu"
+
+#: html-templates/projects/project.tpl:139
+msgid "Users' Site"
+msgstr "Stranica za korisnike"
+
+#: html-templates/projects/project.tpl:145
+msgid "Developers' Site"
+msgstr "Stranica za programere"
+
+#: html-templates/projects/project.tpl:152
+msgid "Chat Channel"
+msgstr "Chat soba"
 
 #: html-templates/projects/project.tpl:184
 #: html-templates/projects/projects.tpl:94
@@ -877,8 +1245,13 @@ msgid "Add project member"
 msgstr "Dodaj člana u projekt"
 
 #: html-templates/projects/project.tpl:247
+#: html-templates/projects/project.tpl:295
 msgid "Role"
 msgstr "Uloga na projektu"
+
+#: html-templates/projects/project.tpl:249
+msgid "optional"
+msgstr "proizvoljno"
 
 #: html-templates/projects/project.tpl:254
 msgid "Add member"
@@ -896,6 +1269,14 @@ msgstr "Markdown je podržan"
 msgid "Manage project members"
 msgstr "Uredi članove projekta"
 
+#: html-templates/projects/project.tpl:296
+msgid "Make Member a Maintainer"
+msgstr "Promoviraj člana u održavatelja projekta"
+
+#: html-templates/projects/project.tpl:297
+msgid "Remove Member"
+msgstr "Ukloni člana"
+
 #: html-templates/projects/project.tpl:307
 msgid "Make Maintainer"
 msgstr "Postavi kao Maintainer"
@@ -907,6 +1288,14 @@ msgstr "Ukloni"
 #: html-templates/projects/project.tpl:316
 msgid "None registered"
 msgstr "Nema registriranih"
+
+#: html-templates/projects/projectDeleted.tpl:7
+msgid "Project %s deleted."
+msgstr "Projekt %s je obrisan."
+
+#: html-templates/projects/projectDeleted.tpl:3
+msgid "Project Deleted"
+msgstr "Projekt je obrisan"
 
 #: html-templates/projects/projectEdit.tpl:23
 msgid "Edit project %s"
@@ -933,20 +1322,24 @@ msgid "Train Schedule Analyzer"
 msgstr "Vizualizacija incidenata (MUP)"
 
 #: html-templates/projects/projectEdit.tpl:47
-msgid "URL for Users"
-msgstr "URL za korisnike"
+msgid "URL for Users:"
+msgstr "Link za korisnike:"
 
 #: html-templates/projects/projectEdit.tpl:48
 msgid "http://mypublicapp.org"
 msgstr "http://www.aplikacija.hr"
 
 #: html-templates/projects/projectEdit.tpl:51
-msgid "URL for Developers"
-msgstr "URL za programere"
+msgid "URL for Developers:"
+msgstr "Link za programere:"
 
 #: html-templates/projects/projectEdit.tpl:55
-msgid "Chat Channel/Hashtag"
-msgstr "Kanal na chatu/Hashtag"
+msgid "Chat Channel/Hashtag:"
+msgstr "Chat soba / hashtag:"
+
+#: html-templates/projects/projectEdit.tpl:63
+msgid "Stage:"
+msgstr "Faza:"
 
 #: html-templates/projects/projectEdit.tpl:68
 msgid "Commenting"
@@ -992,17 +1385,21 @@ msgstr "Tvoj projekt je kreiran: %s"
 msgid "Saved"
 msgstr "Spremljeno"
 
-#: html-templates/projects/projectUpdateCreated.tpl:6
-msgid "Update #%u"
-msgstr "Novost #%u"
+#: html-templates/projects/projectSaved.tpl:11
+msgid "Project Created"
+msgstr "Projekt je kreiran"
+
+#: html-templates/projects/projectUpdateCreated.tpl:8
+msgid "%s posted to %s"
+msgstr "%s objavljen u %s"
 
 #: html-templates/projects/projectUpdateCreated.tpl:3
 msgid "Update Posted"
 msgstr "Novost je objavljena"
 
-#: html-templates/projects/projectUpdateCreated.tpl:6
-msgid "posted to"
-msgstr "objavljeno u"
+#: html-templates/projects/projects.tpl:107
+msgid "No projects were found, try creating one or %s."
+msgstr "Nema pronađenih projekata, pokušaj kreirati novi ili %s."
 
 #: html-templates/projects/projects.tpl:15
 msgid "Add Project&hellip;"
@@ -1032,6 +1429,18 @@ msgstr "faze"
 msgid "$Project->Stage"
 msgstr "$Project->Stage"
 
+#: html-templates/projects/projects.tpl:99
+msgid "Public Site"
+msgstr "Javna stranica"
+
+#: html-templates/projects/projects.tpl:100 php-classes/Laddr/Project.php:165
+msgid "Developers"
+msgstr "Developeri"
+
+#: html-templates/projects/projects.tpl:109
+msgid "No projects were found, try creating one."
+msgstr "Nema projekata... Pokušaj kreirati novi projekt."
+
 #: html-templates/redirects/redirectEdit.tpl:3
 #: html-templates/redirects/redirects.tpl:3
 #: html-templates/redirects/redirects.tpl:19
@@ -1042,13 +1451,26 @@ msgstr "Preusmjeravanja"
 msgid "Create Redirect"
 msgstr "Kreiraj preusmjeravanje"
 
-#: html-templates/register/recoverPassword.tpl:25
-msgid "Email or Username"
-msgstr "Email ili korisničko ime"
-
+#: html-templates/register/recoverPassword.tpl:3
 #: html-templates/register/recoverPassword.tpl:29
 msgid "Reset Password"
 msgstr "Ponovno postavi lozinku"
+
+#: html-templates/register/recoverPassword.tpl:9
+msgid "Reset Your Password"
+msgstr "Resetiraj lozinku"
+
+#: html-templates/register/recoverPassword.tpl:12
+msgid ""
+"Enter the username or email address associated with your account below, and "
+"you will receive an email with instructions to reset your password."
+msgstr ""
+"Unesi korisničko ime ili email adresu te ćemo ti poslati email s uputama za "
+"resetiranje lozinke."
+
+#: html-templates/register/recoverPassword.tpl:25
+msgid "Email or Username"
+msgstr "Email ili korisničko ime"
 
 #: html-templates/register/recoverPasswordComplete.tpl:10
 msgid ""
@@ -1067,6 +1489,10 @@ msgstr "Email za oporavak je poslan"
 #: html-templates/register/register.tpl:19
 msgid "Register with %s"
 msgstr "Postani član %s"
+
+#: html-templates/register/register.tpl:3
+msgid "Register"
+msgstr "Prijava"
 
 #: html-templates/register/register.tpl:38
 msgid "First Name"
@@ -1088,6 +1514,12 @@ msgstr "Horvat ili H."
 msgid "civichacker@example.com"
 msgstr "nickname@email.com"
 
+#: html-templates/register/register.tpl:50
+msgid ""
+"Email address <strong>will</strong> be visible to other signed-in members."
+msgstr ""
+"Email adresa <strong>će</strong> biti vidljiva samo ulogiranim korisnicima."
+
 #: html-templates/register/register.tpl:55
 msgid "CivicHacker"
 msgstr "Nadimak"
@@ -1103,10 +1535,6 @@ msgstr "Kreiraj račun"
 #: html-templates/register/register.tpl:74
 msgid "Already have an account?"
 msgstr "Već si registrirani član?"
-
-#: html-templates/register/register.tpl:74
-msgid "Log in"
-msgstr "Prijavi se"
 
 #: html-templates/register/registerComplete.tpl:3
 #: html-templates/register/registerComplete.tpl:9
@@ -1125,11 +1553,31 @@ msgstr "Pridružite se chat sobama zajednice"
 msgid "Fill out your profile and upload a photo"
 msgstr "Ispunite vaš profil i uplodajte sliku"
 
-#: php-classes/ActiveRecord.class.php:602
+#: html-templates/pages/page.tpl:23
+msgid "Delete Page"
+msgstr "Obriši stranicu"
+
+#: html-templates/pages/page.tpl:26
+msgid "Are you sure you want to delete the page"
+msgstr "Sigurno želiš obrisati stranicu"
+
+#: html-templates/pages/page.tpl:29
+msgid "Page deleted"
+msgstr "Stranica je obrisana"
+
+#: html-templates/pages/pages.tpl:12
+msgid "Create New Page"
+msgstr "Kreiraj novu stranicu"
+
+#: html-templates/pages/pages.tpl:14
+msgid "Pages Directory"
+msgstr "Direktorij stranica"
+
+#: php-classes/ActiveRecord.class.php:635
 msgid "Required related %s is missing."
 msgstr "Potreban povezani %s nedostaje."
 
-#: php-classes/ActiveRecord.class.php:619
+#: php-classes/ActiveRecord.class.php:652
 msgid "%s matches another existing record."
 msgstr "%s duplicira postojeći zapis."
 
@@ -1138,7 +1586,7 @@ msgid "URL handle can only contain letters, numbers, hyphens, and underscores"
 msgstr "URL naziv može sadržati samo slova, brojeve, povlake i podvlaka"
 
 #: php-classes/HandleBehavior.class.php:23
-#: php-classes/Emergence/CMS/ContentBlock.php:50
+#: php-classes/Emergence/CMS/ContentBlock.php:63
 msgid "Handle can only contain letters, numbers, hyphens, and underscores"
 msgstr "Nadimak može sadržavati samo slova, brojeve, crticu i donju crticu"
 
@@ -1258,7 +1706,7 @@ msgstr ""
 msgid "A name is required"
 msgstr "Ime je obavezno"
 
-#: php-classes/Laddr/Project.php:199
+#: php-classes/Laddr/Project.php:200
 msgid "Founder"
 msgstr "Osnivač"
 
@@ -1269,10 +1717,6 @@ msgstr "Naslov projekta je obavezan"
 #: php-classes/Laddr/Project.php:160
 msgid "Users"
 msgstr "Korisnici"
-
-#: php-classes/Laddr/Project.php:165
-msgid "Developers"
-msgstr "Developeri"
 
 #: php-classes/Laddr/ProjectBuzz.php:98
 msgid "This URL has already been logged as buzz for this project"
@@ -1298,32 +1742,32 @@ msgstr "Unesi datum i vrijeme kada je vijest izvorno objavljena"
 msgid "Update body is required"
 msgstr "Potrebno je urediti sadržaj"
 
-#: php-classes/Laddr/ProjectsRequestHandler.php:102
-#: php-classes/Laddr/ProjectsRequestHandler.php:138
+#: php-classes/Laddr/ProjectsRequestHandler.php:101
+#: php-classes/Laddr/ProjectsRequestHandler.php:137
 msgid "Parameter \"username\" required"
 msgstr "Potrebo"
 
-#: php-classes/Laddr/ProjectsRequestHandler.php:106
-#: php-classes/Laddr/ProjectsRequestHandler.php:142
+#: php-classes/Laddr/ProjectsRequestHandler.php:105
+#: php-classes/Laddr/ProjectsRequestHandler.php:141
 msgid "User not found"
 msgstr "Korisnik nije pronađen"
 
-#: php-classes/Laddr/ProjectsRequestHandler.php:115
+#: php-classes/Laddr/ProjectsRequestHandler.php:114
 msgid "This member is already in this project"
 msgstr "Ovaj član je već uključen u ovaj projekt"
 
-#: php-classes/Laddr/ProjectsRequestHandler.php:148
+#: php-classes/Laddr/ProjectsRequestHandler.php:147
 msgid "Are you sure you want to remove %s from %s?"
 msgstr "Jeste li sigurni da želite ukloniti %s s %s?"
 
-#: php-classes/Laddr/ProjectsRequestHandler.php:186
+#: php-classes/Laddr/ProjectsRequestHandler.php:185
 msgid "Are you sure you want to make %s the maintainer of %s?"
 msgstr "Jeste li sigurni da želite postaviti %s kao maintainera na %s?"
 
-#: php-classes/Laddr/ProjectsRequestHandler.php:209
+#: php-classes/Laddr/ProjectsRequestHandler.php:208
 msgid "Update not found"
 msgstr "Novost nije pronađena"
 
-#: php-classes/Laddr/ProjectsRequestHandler.php:221
+#: php-classes/Laddr/ProjectsRequestHandler.php:220
 msgid "Update body cannot be blank"
 msgstr "Sadržaj novosti ne može biti prazan"
