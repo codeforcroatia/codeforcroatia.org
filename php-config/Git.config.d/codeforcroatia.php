@@ -12,6 +12,7 @@ Git::$repositories['codeforcroatia'] = [
         'dwoo-plugins',
         'event-handlers',
         'html-templates',
+        'locales',
         'php-classes',
         // 'php-config',
         'php-config' => [
