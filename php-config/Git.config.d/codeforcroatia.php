@@ -16,8 +16,9 @@ Git::$repositories['codeforcroatia'] = [
         // 'php-config',
         'php-config' => [
             'exclude' => [
-                // secrets config:
-                '#^/RemoteSystems(/|$)#'
+                // // don't sync secrets config:
+                '#^/RemoteSystems(/|$)#',
+                '#/Emergence/Slack/API.config.php$#'
             ]
         ],
         'php-migrations',
