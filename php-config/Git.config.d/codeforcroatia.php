@@ -22,7 +22,8 @@ Git::$repositories['codeforcroatia'] = [
                 // don't sync specific config files:
                 '#/RemoteSystems/MailChimp.php$#',
                 '#/RemoteSystems/ReCaptcha.php$#',
-                '#/Emergence/Slack/API.config.php$#'
+                '#/Emergence/Slack/API.config.php$#',
+                '#/ContactRequestHandler.config.d/email-alerts.php$#'
             ]
         ],
         'php-migrations',
