@@ -14,9 +14,8 @@
         <div class="dropdown-menu">
           <a class="dropdown-item" href="/how-to-help">{_ "How to Join"}</a>
           <a class="dropdown-item" href="/pages/local_groups">{_ "Start a Group in Your Town"}</a>
-          <a class="dropdown-item" href="/chat" target="_blank">{_ "Chat"} <small>(Slack)</small></a>
-          <a class="dropdown-item" href="/slackin">{_ "Get Invite"} <small>(Slack)</small></a>
           <a class="dropdown-item" href="http://diskurs.codeforcroatia.org" target="_blank">{_ "Forum"} <small>(Discourse)</small></a>
+          <a class="dropdown-item" href="/chat" target="_blank">{_ "Chat"} <small>(Slack)</small></a>
           <a class="dropdown-item" href="/contact">{_ "Contact Us"} <small>(Email)</small></a>
           <a class="dropdown-item" href="/pages/mjesecni_program_meetupa">{_ "Meetups"}</a>
           <a class="dropdown-item" href="/people">{_ "Members"}</a>
