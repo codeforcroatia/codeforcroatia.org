@@ -18,7 +18,7 @@
                         <p class="media-heading">{Laddr::$siteSlogan|escape|markdown}</p>
                         <ul class="list-inline">
                             {if $.User}
-                                <li class="list-inline-item"><p><a href="/chat" class="btn btn-success">{icon "comment"}&nbsp;{_ "Chat with us on Slack"}</a></p></li>
+                                <li class="list-inline-item"><p><a href="//diskurs.codeforcroatia.org" class="btn btn-success">{icon "comment"}&nbsp;{_ "Let's discuss at Discourse"}</a></p></li>
                             {else}
                                 <li class="list-inline-item"><p><a href="/register" class="btn btn-success">{icon "heart"}&nbsp;{_ "Join Us!"}</a></p></li>
                             {/if}
