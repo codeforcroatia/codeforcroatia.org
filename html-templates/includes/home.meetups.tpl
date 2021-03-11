@@ -13,3 +13,9 @@
         {meetup $futureMeetup}
     {/foreach}
 {/if}
+
+<!-- Discourse posts embed per forum category -->
+<d-topics-list discourse-url="https://diskurs.codeforcroatia.org/" category="8" per-page="5"></d-topics-list>
+<d-topics-list discourse-url="https://diskurs.codeforcroatia.org/" category="7" per-page="5"></d-topics-list>
+<d-topics-list discourse-url="https://diskurs.codeforcroatia.org/" category="9" per-page="5"></d-topics-list>
+<d-topics-list discourse-url="https://diskurs.codeforcroatia.org/" category="13" per-page="5"></d-topics-list>
