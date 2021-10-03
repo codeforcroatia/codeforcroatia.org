@@ -1,3 +1,3 @@
 <?php
 
-ContactRequestHandler::$emailTo = 'brigade-info@codeforamerica.org';
+ContactRequestHandler::$emailTo = '${{ secrets.ORG_CONTACT_ADDRESS }}';
